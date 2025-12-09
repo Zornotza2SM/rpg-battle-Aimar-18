@@ -1,0 +1,69 @@
+body {
+    font-family: 'Verdana', sans-serif;
+    background-color: #1a1a2e;
+    color: white;
+    text-align: center;
+}
+
+.battle-screen {
+    border: 4px solid #e94560;
+    width: 350px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #16213e;
+    box-shadow: 0 0 20px rgba(233, 69, 96, 0.5);
+}
+
+.fighters {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+    font-size: 50px;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.boton {
+    background-color: #e94560;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px;
+    width: 45%;
+}
+
+.boton:hover { background-color: #ff6b81; }
+.boton.heal { background-color: #0f3460; }
+.boton.heal:hover { background-color: #533483; }
+
+.status-msg { height: 20px; color: #fcdab7; margin-bottom: 10px; }
+
+/* 6. FASEA: Osasun Barrak (CSS Dinamikoa) */
+.health-bar-container {
+    background-color: #333;
+    width: 100%;
+    height: 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+    overflow: hidden;
+}
+
+.health-bar {
+    height: 100%;
+    transition: width 0.3s ease; /* Animazio leuna jaisten denean */
+}
+
+.boton:disabled {
+    background-color: #555;
+    cursor: not-allowed;
+}
